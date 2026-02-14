@@ -1,0 +1,133 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "twf_cc:chopper",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:physics": {
+				"has_gravity": true,
+				"has_collision": true
+			},
+			"minecraft:pushable": {
+				"is_pushable": true
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+            "minecraft:leashable": {
+                "soft_distance": 4.0,
+                "hard_distance": 6.0,
+                "max_distance": 10.0
+            },
+            "minecraft:type_family": {
+                "family": [ "machine" ]
+            },
+            "minecraft:breathable": {
+                "totalSupply": 15,
+                "suffocateTime": 0
+            },
+            "minecraft:collision_box": {
+                "width": 0.8,
+                "height": 0.9
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "fall",
+                    "deals_damage": false
+                }
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_lava",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "lava",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:movement": {
+                "value": 0.3
+            },
+            "minecraft:flying_speed": {
+                "value": 0.15
+            },
+            "minecraft:navigation.hover": {
+                "can_path_over_water": true,
+                "can_sink": false,
+                "can_pass_doors": false,
+                "can_path_from_air": true,
+                "avoid_water": true,
+                "avoid_damage_blocks": true,
+                "avoid_sun": false
+            },
+            "minecraft:movement.hover": {},
+            "minecraft:jump.static": {},
+            "minecraft:can_fly": {},			
+            "minecraft:health": {
+                "value": 10,
+                "max": 10
+            },
+            "minecraft:behavior.tempt": {
+                "priority": 1,
+                "speed_multiplier": 1.4,
+                "items": ["minecraft:lead"],
+                "within_radius": 24.0
+            },
+            "minecraft:nameable": {},			
+			"minecraft:behavior.move_to_block": {
+				"priority": 4,
+				"tick_interval": 1,
+				"start_chance": 0.9,
+				"search_range": 32,
+				"search_height": 16,
+				"goal_radius": 1.0,
+				"stay_duration": 1.0,
+				"target_selection_method": "nearest",
+				"target_offset": [0, 0.25, 0],
+				"target_blocks": [
+					"minecraft:acacia_log",
+					"minecraft:birch_log",
+					"minecraft:cherry_log",
+					"minecraft:dark_oak_log",
+					"minecraft:jungle_log",
+					"minecraft:mangrove_log",
+					"minecraft:oak_log",
+					"minecraft:pale_oak_log",
+					"minecraft:spruce_log",
+					"minecraft:crimson_stem",
+					"minecraft:warped_stem",
+					"minecraft:mushroom_stem",
+					"minecraft:brown_mushroom_block",
+					"minecraft:red_mushroom_block"
+					],
+				"on_stay_completed": [
+					{
+						"event": "twf_cc:chop_job",
+						"target": "self"
+					}
+				]
+			}			
+		},
+        "events": {
+            "twf_cc:chop_job": {
+                "queue_command": {
+					"command": "scriptevent twf_cc:chop_job"
+				}
+            },
+			"minecraft:entity_spawned": {
+				"queue_command": {
+					"command": "playsound elytra.loop @s ~ ~ ~ 1.0 3.0"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.twf_cc_chopper.spin": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": ["v.axesrot.x", "v.axesrot.y", "v.axesrot.z"]
+				}
+			}
+		}
+	}
+}

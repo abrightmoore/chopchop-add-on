@@ -1,0 +1,122 @@
+{
+  "sounds.twf.cc.chopchop1": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/chopchop1"
+    ]
+  },
+  "sounds.twf.cc.chopchop2": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/chopchop2"
+    ]
+  },
+  "sounds.twf.cc.chopchop3": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/chopchop3"
+    ]
+  },
+  "sounds.twf.cc.chopchop4": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/chopchop4"
+    ]
+  },
+  "sounds.twf.cc.chopchop5": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/chopchop5"
+    ]
+  },
+  "sounds.twf.cc.chopchop6": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/chopchop6"
+    ]
+  },
+  "sounds.twf.cc.chopchop7": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/chopchop7"
+    ]
+  },
+  "sounds.twf.cc.chopchop8": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/chopchop8"
+    ]
+  },
+  "sounds.twf.cc.chopchop9": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/chopchop9"
+    ]
+  },
+  "sounds.twf.cc.timber1": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/timber1"
+    ]
+  },
+  "sounds.twf.cc.timber2": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/timber2"
+    ]
+  },
+  "sounds.twf.cc.timber3": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/timber3"
+    ]
+  },
+  "sounds.twf.cc.timber4": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/timber4"
+    ]
+  },
+  "sounds.twf.cc.exfoliate1": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/exfoliate1"
+    ]
+  },
+  "sounds.twf.cc.exfoliate2": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/exfoliate2"
+    ]
+  },
+  "sounds.twf.cc.exfoliate3": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/exfoliate3"
+    ]
+  },
+  "sounds.twf.cc.exfoliate4": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/exfoliate4"
+    ]
+  },
+  "sounds.twf.cc.exfoliate5": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/exfoliate5"
+    ]
+  },
+  "sounds.twf.cc.exfoliate6": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/exfoliate6"
+    ]
+  },
+  "sounds.twf.cc.exfoliate7": {
+    "category": "ui",
+    "sounds": [
+      "sounds/twf/cc/chopchop/exfoliate7"
+    ]
+  }
+}

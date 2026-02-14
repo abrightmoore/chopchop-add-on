@@ -1,0 +1,37 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "twf_cc:chopper"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "minecraft:stick"
+            },
+            {
+                "item": "minecraft:iron_axe"
+            },
+            {
+                "item": "minecraft:iron_axe"
+            },
+            {
+                "item": "minecraft:iron_axe"
+            },
+            {
+                "item": "minecraft:iron_axe"
+            },
+            {
+                "item": "minecraft:redstone"
+            }
+        ],
+        "result": {
+            "item": "twf_cc:chopper_spawn_egg"
+        },
+        "unlock": {
+            "context": "AlwaysUnlocked"
+        }
+    }
+}

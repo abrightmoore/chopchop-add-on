@@ -1,0 +1,83 @@
+pack.name=§bChop Chop§r
+pack.description=§bChop Chop§r by The World Foundry
+item.spawn_egg.entity.twf_cc:chopper.name=Chopper
+tile.twf_cc:chop_chop_settings.name=Chop Chop Settings
+item.twf_cc:chop_chop_settings.name=Chop Chop Settings
+entity.twf_cc:chop_chop_settings.name=Chop Chop Settings
+item.spawn_egg.entity.twf_cc:chop_chop_settings.name=Chop Chop Settings
+twf_cc:guide.start.title=Chop Chop Settings
+twf_cc:guide.start.body=This is the guidebook and settings manager for Chop Chop Add-On, by The World Foundry. This enables a great multi-block-break feature.%1%1Survival mode usage:%1%1(1) Equip an Axe%1(2) Chop a Log, Leaves, Stem, Vine, or Wart block%1(3) Optionally check and change settings (below)%1%1
+twf_cc:guide.start.button=Close Guide
+twf_cc:guide.tasks.button=View Tasks
+twf_cc:guide.creative.button=Creative Mode
+twf_cc:guide.settings.button=Configure
+twf_cc:guide.cancel.button=Cancel all Tasks
+twf_cc:guide.clearitems.button=Clear All Items
+twf_cc:guide.adventure.button=Adventure Mode
+twf_cc:guide.survivalsettings.button=Settings
+twf_cc:guide.goback.button=Go Back
+twf_cc:guide.creative.title=Creative Chop Chop
+twf_cc:guide.creative.body=Creative Mode usage expands your world editing capability. When in Creative Mode, if you destroy a Block then all Blocks of the same type that are connected to it will also be destroyed. This process will continue to the edge of simulated chunks or beyond if you are moving around following the process.%1%1You can cancel this process while it is running using the Tasks page Cancel button.%1%1
+twf_cc:guide.adventure.title=Adventure Chop Chop
+twf_cc:guide.adventure.body=Adventure Mode will work like Survival Mode if the world author has configured the CanDestroy tag for your Axe instance.%1%1
+
+twf_cc:guide.settings.title=Per Player Settings
+
+twf_cc:settings.form.enabled=Enable Chop Chop?
+twf_cc:settings.form.notify=Get Chop Chop messages?
+twf_cc:settings.form.sounds=Play Chop Chop sounds?
+twf_cc:settings.form.destroy=Chance of trying to 'destroy' each Chop Chopped block\n0.0 = Never, 1.0 = Always destroy
+
+twf_cc:guide.introduction.title=Introduction Chop Chop
+twf_cc:guide.introduction.body=Chop Chop Add-On is a Survival time saver that helps you rapidly clear trees, giant mushrooms, vines, and Nether forests. Equip an Axe, and get Chop Chopping!%1%1Chop Chop Add-On also helps with Creative tasks: when you change game mode to Creative, re-open this book for more instructions.%1%1You can change your personal Settings and learn more about this project below:
+
+twf_cc:guide.introduction_creative.title=Introduction (Creative)
+twf_cc:guide.introduction_creative.body=Chop Chop Add-On is a Creative tool that helps you quickly delete groups of connected blocks. While in Creative game mode, break a block while holding this Guide Book in your main hand and watch the deletion roll over the world!%1%1Chop Chop Add-On also helps with Survival tasks: when you change game mode to Survival, re-open this book for more helpful instructions.
+
+twf_cc:guide.jobcontrol.button=Tasks
+twf_cc:guide.about.button=Learn More
+twf_cc:guide.close.button=Close This Guide
+twf_cc:guide.about.title=About Chop Chop
+twf_cc:guide.about.body=Chop Chop Add-On was made to help you spend more of your time in Minecraft doing the things you love. Chop Chop saves you time on the boring tasks of harvesting each log, leaf, stem and Nether wart block. No more floating trees!%1%1This project differs from other similar Add-Ons because it is built to scale, has both a Survival mode for regular gaming and a Creative mode to help you when you are making large-scale landscapes and structures.%1%1Made with care, and to last, by The World Foundry
+
+twf_cc:guide.about_creative.title=About Chop Chop Creative Mode
+twf_cc:guide.about_creative.body=In Creative Mode, Chop Chop becomes a powerful world editing block replacement tool. The default settings allow you to break any block with this Chop Chop Guide and you will destroy all of the blocks of the same type that are connected to the block you broke. This happens because the "destroy block" is Air.%1%1You can change the block type used by entering the Configuration page of this Guide while you are in Creative Mode. Changing the "minecraft:air" to "minecraft:gold_block" will replace any blocks with Gold when you break a block.%1%1Note that you can also use a Block as the breaking tool to replace Block types in the world.%1%1Because sometimes there are many blocks connected together, you also are given control over the process through a special Tasks management page. You can suspend, restart, cancel and undo a task.%1%1Note that any setting changes you make are only for the current game session, and everything resets to the defaults when all players exit the world or you reload the Chop Chop Add-On.%1%1Some large operations can result in using lots of memory when the Undo feature is enabled for a task. You can disable the Undo for very large running task to allow them to complete without disrupting the game.%1%1Chop Chop is a very powerful Creative tool when used correctly. Take regular backups of your world when working on large projects in Creative game mode to make sure you have a stable recovery point if you accidentally break the wrong block or make too many changes to safely undo.
+
+twf_cc:guide.tasks.title=Suggested Tasks
+twf_cc:guide.tasks.body=Here's how to play.%1%1With this Add-On enabled in your world or Realm, you will craft and then equip an Axe. Search for a tree made of wooden logs in the Overworld (where you normally spawn).%1%1(1) Aim at the Leaves of the tree and use your Axe to break a block%1%1(2) You should see all the leaves break.%1%1(3) The process completes when there are no more blocks to break.%1%1(4) Move to a Log that makes up the tree trunk and break it as well. Chop chop!%1%1You can disable and enable this behaviour for yourself in the Configure page. There you can also adjust other settings, like sounds and messages.%1%1This §bGuide§r can be recreated by naming a regular Minecraft Book "§bChop Chop Guide§r" on an Anvil.%1%1You can craft and auto-§bChopper§r machine with four Iron Axes, a Stick, and one Redstone dust.%1%1Because you sometimes won't want to collect all the resources from all broken blocks, you can also change the chance that the game will try to break each block in a way that may cause it to drop itself. This setting can also help with any performance problems by preventing floating Items. (Note you can also disable or enable Tile Drops in your Game Settings to prevent Item drops for the World).%1%1Frequently Asked Questions%1%1§bQ. I already have something that breaks trees with one hit. How is Chop Chop different?§r%1A.  Chop Chop has a super-useful Creative mode that works with nearly all block types and includes a powerful job management and undo feature.%1%1§bQ. I broke a Log but nothing happened!§r%1A.  That's not really a question. I guess you're asking why Chop Chop isn't working. In Survival Mode, check your Configure page in this Guide and make sure you have enabled Chop Chop. Try Chop Chop with an Oak tree and make sure that works before trying anything more exotic. You must use an Axe tool to break the block - note that this also includes tools from other Add-Ons that have the word "axe" in their item ID.%1%1§bQ. Nothing drops when I Chop Chop!§r%1A.  Also not really a question. Questions have question-marks, like this: see?%1  You will always get the block you broke with an Axe, so if this isn't happening check the world or Realm settings to make sure you have 'Tile Drops' enabled. If the problem is that you only get that one block, you may have the Chance of trying to 'destroy' each Chop Chopped block set too low. It defaults to 0.5, so try setting that value in the Configure page and hit Submit.%1%1§bQ. When I Chop Chop sand and gravel things look... weird. Why?§r%1A.  Falling blocks will try to fall during the Chop Chop process and so this can affect how things look. Leave it for a bit and it should settle down.%1%1§bQ. I have deployed a Chopper but it isn't working, any ideas?§r%1A.  The Chopper may be blocked by Vines or other non-Log blocks. Give it a hand by clearing the path, or attach a Lead and move it yourself.%1%1§bQ. You're The World Foundry. You make some weird stuff. Why make this very useful Add-On?§r%1A.  I have been working with Minecraft and the Map Making Community for over 10 years now and much of that time was spent creating really useful tools to help people realise their creative vision. This is another really useful tool that shines in Creative mode. You should check out §bLAMP LIGHTS§r and §bBUBBLE§r too, one gives you a cute little pet torch to help when you're mining, and the other has bubbles.%1%1§bQ. I've got some more questions and ideas, how do I reach you?§r%1A.  I'd love to hear them! Please either rate this project on the Marketplace (5 stars would be nice, but you do what you feel comfortable with), or email me at §bAdrian@theworldfoundry.com§r.
+
+twf_cc:guide.jobs_all_cancel.button=Stop all Running Tasks
+twf_cc:guide.jobs_all_hold.button=Pause all Running Tasks
+
+twf_cc:guide.jobs.title=Chop Chop Task Management
+twf_cc:guide.jobs_all_completed.button=Manage Completed Tasks
+twf_cc:guide.job_detail.title=Manage Chop Chop Task
+
+twf_cc:guide.nightvision.button=Night Vision On
+twf_cc:guide.nightvisionoff.button=Night Vision Off
+
+twf_cc:guide.survival.button=Change to Survival Game Mode (Warning: may cause death)
+
+twf_cc:guide.creativesettings.title=Creative Session Settings
+twf_cc:settings.form.destroy_block=What will be the replacement block id?
+twf_cc:settings.form.const_axe_ident=What tool identifier will Survival players use?
+twf_cc:settings.form.timber_sound_chance=How often should the "TIMBER!" sound play?
+twf_cc:settings.form.const_command_limit=How many commands should buffer at any time?
+twf_cc:settings.form.framechange_time_limit=How long should a single update tick run (milliseconds)?
+twf_cc:settings.form.work_time_limit=How long can the replace function run each tick (milliseconds)?
+twf_cc:settings.form.run_commands_time_limit=How long can commands run each tick (milliseconds)?
+
+twf_cc:guide.jobscompleted.title=Manage Completed Tasks
+twf_cc:guide.jobscompleteddelete.title=Delete Completed Tasks
+twf_cc:guide.jobscompleteddelete.body=Select Tasks to delete. Deleting frees memory and simplifies the number of things you need to manage.
+twf_cc:guide.removecompleted.button=Remove Completed Tasks
+
+twf_cc:guide.settings_creative.button=Creative Configuration
+twf_cc:guide.about_creative.button=Learn More (for Experts)
+
+twf_cc:settings.form.debug=Debug messages and errors
+
+twf_cc:guide.removesmallcompleted.button=Remove all small complete tasks
+
+twf_cc:settings.form.blocktoolenabled=Can you break a block with a block in hand to run a SWAP task?
+twf_cc:settings.form.undoperplayer=Undo enabled for Survival Chop Chops?

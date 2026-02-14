@@ -1,0 +1,88 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.twf_cc_chopper",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0],
+					"locators": {
+						"lead": [0, 8, 0]
+					}
+				},
+				{
+					"name": "spinner",
+					"parent": "root",
+					"pivot": [0, 4, 0],
+					"cubes": [
+						{
+							"origin": [0, 4, 0],
+							"size": [16, 0, 16],
+							"uv": {
+								"up": {"uv": [0, 0], "uv_size": [16, 16]}
+							}
+						},
+						{
+							"origin": [0, 4, 0],
+							"size": [16, 0, 16],
+							"pivot": [0, 4, 0],
+							"rotation": [0, -90, 0],
+							"uv": {
+								"up": {"uv": [0, 0], "uv_size": [16, 16]}
+							}
+						},
+						{
+							"origin": [0, 4, 0],
+							"size": [16, 0, 16],
+							"pivot": [0, 4, 0],
+							"rotation": [0, 180, 0],
+							"uv": {
+								"up": {"uv": [0, 0], "uv_size": [16, 16]}
+							}
+						},
+						{
+							"origin": [0, 4, 0],
+							"size": [16, 0, 16],
+							"pivot": [0, 4, 0],
+							"rotation": [0, 90, 0],
+							"uv": {
+								"up": {"uv": [0, 0], "uv_size": [16, 16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "spindle",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-1, 0, 0],
+							"size": [2, 15, 0],
+							"uv": {
+								"north": {"uv": [4, 12], "uv_size": [2, 1]}
+							}
+						},
+						{
+							"origin": [-1, 0, 0],
+							"size": [2, 15, 0],
+							"pivot": [0, 0, 0],
+							"rotation": [0, -90, 0],
+							"uv": {
+								"north": {"uv": [0, 14], "uv_size": [2, 1]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

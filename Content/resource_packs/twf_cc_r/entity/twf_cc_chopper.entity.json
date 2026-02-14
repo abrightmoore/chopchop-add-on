@@ -1,0 +1,37 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "twf_cc:chopper",
+			"animations": {
+                "spin": "animation.twf_cc_chopper.spin"
+            },
+			"scripts": {
+				"initialize" : [
+					"variable.axesrot = query.bone_rotation('root');"
+				],
+				"pre_animation": [
+					"variable.axesrot.y = variable.axesrot.y - 25;",
+					"variable.axesrot.x = Math.random(-5,5);",
+					"variable.axesrot.z = Math.random(-5,5);"
+				],
+				"animate": [
+					"spin"
+				]
+            },
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/twf/cc/entity/chopper"
+			},
+			"geometry": {
+				"default": "geometry.twf_cc_chopper"
+			},
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"texture": "twf_cc:chopper_item"
+			}
+		}
+	}
+}

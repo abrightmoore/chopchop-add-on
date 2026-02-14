@@ -1,0 +1,9 @@
+{
+    "resource_pack_name": "twf_cc_r", 
+    "texture_data": {
+		"twf_cc:chopper_item": {
+			"textures": "textures/twf/cc/items/chopper"
+		}
+	},
+    "texture_name": "atlas.items"
+}
