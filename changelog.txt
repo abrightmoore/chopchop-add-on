@@ -1,0 +1,40 @@
+20251014 -
+1. Suppress jobs that use the same block types
+2. Per-player undo setting, defaults to False per-player, True for Creative.
+
+20251016 - 
+1. Undo only for jobs with processed blocks
+2. Undone Jobs removed from the Completed Jobs list.
+3. Completed jobs that can be undone show the number of blocks on their button.
+
+20251021 -
+1. Chop Chop Ores with Pickaxe in Survival
+2. Clear infinite night vision when changing to survival using the guide button for the same in Creative
+
+20251028 -
+1. Added EXFOLIATE sound for Chop Chop leaves
+
+20251104 -
+1. Fixed error when breaking blocks with bare hand.
+
+20251210 -
+1. Key art character replaced.
+
+20260220 -
+1. twf_cc:chopper no longer breaks minecraft:bedrock
+2. Added to the "About Chop Chop Creative Mode" page: "A WARNING: Your game may become unstable, stop responding, or crash if too many tasks are running at the same time."
+3. Reduced the per-tick add-on time limit from 100ms to 45ms to help with lower-end device performance
+4. Extended the panorama to 1000x450 pixel size
+
+RC4:
+
+20260220 -
+1. Resolved Blocking issue #2: twf_cc:chopper no longer breaks minecraft:bedrock
+2. Addressed Note #2 with informational update: Added to the "About Chop Chop Creative Mode" page: "A WARNING: Your game may become unstable, stop responding, or crash if too many tasks are running at the same time."
+3. Addressed Note #2 with code update: Reduced the per-tick add-on time limit from 100ms to 45ms to help with lower-end device performance
+4. Resolved Blocking issue #1: Extended the panorama to 1000x450 pixel size
+
+Noted feedback on Note #1 on lack of item durability customisation. The current design is as was intended.
+
+Content guide is unchanged: https://docs.google.com/document/d/1_79ll7LHlWchFuy75QUD077zJOu2cRuI
+

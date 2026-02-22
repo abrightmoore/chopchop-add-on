@@ -82,7 +82,7 @@ let CONST_INTENT_LIMIT = 10000;
 
 let SCHED_FRAME_AMT = 1;
 
-let CONST_FRAMECHANGE_TIME_LIMIT = 100;
+let CONST_FRAMECHANGE_TIME_LIMIT = 45; // 20260220a was 100
 
 let CONST_WORK_TIME_LIMIT = 35;
 let CONST_INTENT_TIME_LIMIT = 20;
@@ -1042,7 +1042,7 @@ mc.world.beforeEvents.playerBreakBlock.subscribe(evt => {
 				
 				if(tool_is_block && get_dynamic_property_with_default(evt.player, BLOCK_TOOL_ENABLED_KEY, false)) {
 					job[JOB_IDX_BLOCKREPLACEMENT] = evt.itemStack.typeId;
-					mc.world.sendMessage("Isa Block!");
+					// mc.world.sendMessage("Isa Block!");
 				}
 				// if(tool_is_block) job[JOB_IDX_BLOCKREPLACEMENT] = evt.itemStack.typeId;
 				
@@ -1096,15 +1096,26 @@ function handleEntityAction(entity) {
 	let dx = undefined;
 	let dz = undefined;
 	let dy = undefined;
+	let block = undefined; // 2026020a
 	for(let y = -1; y < 2; y++) {
 		for(let x = -1; x < 2; x++) {
 			for(let z = -1; z < 2; z++) {
-				dx = String(entity.location.x+x)
-				dz = String(entity.location.z+z)
-				dy = String(entity.location.y+y)
-				
-				cmd = "/setblock "+dx+" "+dy+" "+dz+" air destroy"
-				map_try_add(command_queue, cmd, [cmd, entity.dimension], CONST_COMMAND_LIMIT, false)
+				dx = entity.location.x+x;
+				dz = entity.location.z+z;
+				dy = entity.location.y+y;
+
+				// 20260220a - Mustn't destroy Bedrock. Turns out that's a RULE.
+				try {
+					block = entity.dimension.getBlock({x:dx, y:dy, z:dz});
+			
+					if(!block.typeId.includes(":bedrock")) {
+						cmd = "/setblock "+String(dx)+" "+String(dy)+" "+String(dz)+" air destroy"
+						map_try_add(command_queue, cmd, [cmd, entity.dimension], CONST_COMMAND_LIMIT, false)
+					}
+				} catch(error) {
+					if(DEBUG) mc.world.sendMessage("[twf_cc] "+String(error) + "\n" + String(error.stack));
+				};	
+				// 2026022a.
 			}
 		}
 	}
